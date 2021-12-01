@@ -40,8 +40,8 @@
             this.groupBox3.Controls.Add(this.lbDisplay);
             this.groupBox3.Location = new System.Drawing.Point(382, 51);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(196, 241);
-            this.groupBox3.TabIndex = 0;
+            this.groupBox3.Size = new System.Drawing.Size(193, 224);
+            this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "출력을 위한 창";
             // 
@@ -49,7 +49,7 @@
             // 
             this.lbDisplay.FormattingEnabled = true;
             this.lbDisplay.ItemHeight = 15;
-            this.lbDisplay.Location = new System.Drawing.Point(16, 33);
+            this.lbDisplay.Location = new System.Drawing.Point(6, 27);
             this.lbDisplay.Name = "lbDisplay";
             this.lbDisplay.Size = new System.Drawing.Size(179, 184);
             this.lbDisplay.TabIndex = 0;
@@ -60,19 +60,19 @@
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.txtName);
             this.groupBox4.Controls.Add(this.label3);
-            this.groupBox4.Location = new System.Drawing.Point(87, 37);
+            this.groupBox4.Location = new System.Drawing.Point(87, 51);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(236, 266);
-            this.groupBox4.TabIndex = 1;
+            this.groupBox4.Size = new System.Drawing.Size(236, 184);
+            this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "입력을 위한 창";
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(76, 123);
+            this.txtPhone.Location = new System.Drawing.Point(64, 116);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(142, 25);
-            this.txtPhone.TabIndex = 3;
+            this.txtPhone.TabIndex = 1;
             // 
             // label4
             // 
@@ -85,15 +85,15 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(68, 45);
+            this.txtName.Location = new System.Drawing.Point(64, 38);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(142, 25);
-            this.txtName.TabIndex = 1;
+            this.txtName.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 41);
+            this.label3.Location = new System.Drawing.Point(19, 41);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 15);
             this.label3.TabIndex = 0;
@@ -101,10 +101,10 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(362, 329);
+            this.btnAdd.Location = new System.Drawing.Point(205, 279);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(118, 45);
-            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Size = new System.Drawing.Size(118, 37);
+            this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "추가";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
