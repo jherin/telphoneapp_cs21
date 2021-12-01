@@ -13,6 +13,9 @@ namespace TelphoneApp {
         public void AddRange(Person[] parr) {
             perList.AddRange(parr);
         }
+        public void Remove(int idx) {
+            perList.RemoveAt(idx);
+        }
         public Person this[int idx] {
             get { return perList[idx]; }
         }

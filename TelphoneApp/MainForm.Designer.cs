@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtRemove = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -50,7 +51,7 @@
             this.groupBox3.Controls.Add(this.lbDisplay);
             this.groupBox3.Location = new System.Drawing.Point(21, 262);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(352, 224);
+            this.groupBox3.Size = new System.Drawing.Size(375, 313);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "출력을 위한 창";
@@ -61,7 +62,7 @@
             this.lbDisplay.ItemHeight = 15;
             this.lbDisplay.Location = new System.Drawing.Point(6, 27);
             this.lbDisplay.Name = "lbDisplay";
-            this.lbDisplay.Size = new System.Drawing.Size(332, 184);
+            this.lbDisplay.Size = new System.Drawing.Size(363, 274);
             this.lbDisplay.TabIndex = 0;
             // 
             // groupBox4
@@ -128,6 +129,7 @@
             this.btnRemove.TabIndex = 3;
             this.btnRemove.Text = "삭제";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnSearch
             // 
@@ -195,9 +197,20 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "전화: ";
             // 
+            // btnPrint
+            // 
+            this.btnPrint.Location = new System.Drawing.Point(412, 347);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(100, 56);
+            this.btnPrint.TabIndex = 5;
+            this.btnPrint.Text = "출력";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
             // MainForm
             // 
             this.ClientSize = new System.Drawing.Size(866, 587);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox4);
@@ -234,6 +247,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtRemove;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnPrint;
     }
 }
 

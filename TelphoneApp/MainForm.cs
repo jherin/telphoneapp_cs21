@@ -15,6 +15,12 @@ namespace TelphoneApp {
             InitializeComponent();
         }
 
+        private void UpdateDisplay(People lt) {
+            lbDisplay.Items.Clear();
+            for (int i = 0; i < lt.Count; ++i)
+                lbDisplay.Items.Add(lt[i].ToString());
+        }
+
         private void btnAdd_Click(object sender, EventArgs e) {
             if (txtName.Text != "" && txtPhone.Text != "") {
                 Person per = new Person(txtName.Text, txtPhone.Text);
@@ -26,6 +32,7 @@ namespace TelphoneApp {
                 UpdateDisplay(pList);
             }
         }
+
         private void btnSearch_Click(object sender, EventArgs e) {
             string name = txtSearch.Text;
             if (name == "")
@@ -41,12 +48,24 @@ namespace TelphoneApp {
                 }
             UpdateDisplay(tlist);
         }
-        private void UpdateDisplay(People lt) {
-            lbDisplay.Items.Clear();
-            for (int i = 0; i < lt.Count; ++i)
-                lbDisplay.Items.Add(lt[i].ToString());
+
+        private void btnRemove_Click(object sender, EventArgs e) {
+            string phone = txtRemove.Text;
+            if (phone == "")
+                return;
+
+            txtRemove.Text = "";
+            txtRemove.Focus();
+
+            for (int i = 0; i < pList.Count; ++i)
+                if (pList[i].Phone == phone) {
+                    pList.Remove(i);
+                }
+            UpdateDisplay(pList);
         }
 
-
+        private void btnPrint_Click(object sender, EventArgs e) {
+            UpdateDisplay(pList);
+        }
     }
 }
