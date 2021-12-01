@@ -23,14 +23,13 @@ namespace TelphoneApp {
                 txtName.Text = "";
                 txtPhone.Text = "";
                 txtName.Focus();
-                //Text = pList.Count.ToString();
                 UpdateDisplay();
             }
         }
         private void UpdateDisplay() {
             lbDisplay.Items.Clear();
             for (int i = 0; i < pList.Count; ++i)
-                lbDisplay.Items.Add(pList[i]);
+                lbDisplay.Items.Add(pList[i].ToString());
         }
     }
 }
